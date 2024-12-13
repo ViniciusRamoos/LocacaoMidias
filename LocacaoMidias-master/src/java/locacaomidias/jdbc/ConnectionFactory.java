@@ -23,7 +23,7 @@ public class ConnectionFactory {
         return DriverManager.getConnection(
                 "jdbc:mariadb://localhost/locacao_midias",
                 "root",
-                "root" );
+                "" );
 
     }
 
