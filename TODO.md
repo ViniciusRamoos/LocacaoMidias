@@ -2,7 +2,7 @@
 
 - [x] Implementar Entidades
 - [x] Implementar DAOs
-- [ ] Testar DAOs
+- [x] Testar DAOs
 - [ ] Implementar Servlets
 - [ ] Implementar Páginas JSP
 - [ ] Desenvolver CSS
