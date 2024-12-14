@@ -95,7 +95,7 @@ public class ExemplarDAO extends DAO<Exemplar> {
                     m.titulo tituloMidia,
                     m.ano_lancamento anoLancamentoMidia,
                     m.codigo_barras codigoBarrasMidia,
-                    m.duracao_em_minutos duracaoMinutos
+                    m.duracao_em_minutos duracaoMinutos,
                     ap.id idAtorPrincipal,
                     ap.nome nomeAtorPrincipal,
                     ap.sobrenome sobrenomeAtorPrincipal,
@@ -209,7 +209,7 @@ public class ExemplarDAO extends DAO<Exemplar> {
                     m.titulo tituloMidia,
                     m.ano_lancamento anoLancamentoMidia,
                     m.codigo_barras codigoBarrasMidia,
-                    m.duracao_em_minutos duracaoMinutos
+                    m.duracao_em_minutos duracaoMinutos,
                     ap.id idAtorPrincipal,
                     ap.nome nomeAtorPrincipal,
                     ap.sobrenome sobrenomeAtorPrincipal,

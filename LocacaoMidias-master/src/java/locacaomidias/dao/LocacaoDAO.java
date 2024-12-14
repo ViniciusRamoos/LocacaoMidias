@@ -118,7 +118,7 @@ public class LocacaoDAO extends DAO<Locacao>{
                     cidade ci,
                     estado e
                 WHERE
-                    l.cliente_id = cliente.id AND
+                    l.cliente_id = c.id AND
                     c.cidade_id = ci.id AND
                     ci.estado_id = e.id
                 ORDER BY
@@ -202,7 +202,7 @@ public class LocacaoDAO extends DAO<Locacao>{
                     cidade ci,
                     estado e
                 WHERE
-                    l.cliente_id = cliente.id AND
+                    l.cliente_id = c.id AND
                     c.cidade_id = ci.id AND
                     ci.estado_id = e.id AND
                     l.id = ?

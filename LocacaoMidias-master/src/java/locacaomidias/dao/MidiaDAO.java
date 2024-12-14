@@ -28,7 +28,7 @@ public class MidiaDAO extends DAO<Midia>{
                 midia(
                     titulo,
                     ano_lancamento,
-                    codigo_barras
+                    codigo_barras,
                     duracao_em_minutos,
                     ator_principal,
                     ator_coadjuvante,
@@ -122,7 +122,7 @@ public class MidiaDAO extends DAO<Midia>{
                     m.titulo tituloMidia,
                     m.ano_lancamento anoLancamentoMidia,
                     m.codigo_barras codigoBarrasMidia,
-                    m.duracao_em_minutos duracaoMinutos
+                    m.duracao_em_minutos duracaoMinutos,
                     ap.id idAtorPrincipal,
                     ap.nome nomeAtorPrincipal,
                     ap.sobrenome sobrenomeAtorPrincipal,
@@ -228,7 +228,7 @@ public class MidiaDAO extends DAO<Midia>{
                     m.titulo tituloMidia,
                     m.ano_lancamento anoLancamentoMidia,
                     m.codigo_barras codigoBarrasMidia,
-                    m.duracao_em_minutos duracaoMinutos
+                    m.duracao_em_minutos duracaoMinutos,
                     ap.id idAtorPrincipal,
                     ap.nome nomeAtorPrincipal,
                     ap.sobrenome sobrenomeAtorPrincipal,
