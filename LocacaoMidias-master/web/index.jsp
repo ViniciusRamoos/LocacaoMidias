@@ -31,8 +31,8 @@
       </a>
     </p>
     <p>
-      <a href="${cp}/formularios/exemplares/listagem.jsp" class="alerta">
-        Exemplares (Implementar)
+      <a href="${cp}/formularios/exemplares/listagem.jsp">
+        Exemplares
       </a>
     </p>
     
