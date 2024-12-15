@@ -26,8 +26,8 @@
     <hr/>
     
     <p>
-      <a href="${cp}/formularios/midias/listagem.jsp" class="alerta">
-        Mídias (Implementar)
+      <a href="${cp}/formularios/midias/listagem.jsp">
+        Mídias
       </a>
     </p>
     <p>
