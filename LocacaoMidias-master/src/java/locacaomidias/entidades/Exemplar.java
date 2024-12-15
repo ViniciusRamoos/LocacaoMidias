@@ -9,7 +9,7 @@ import jakarta.validation.constraints.NotNull;
 public class Exemplar {
     
     @NotNull
-    private Long codigo_interno;
+    private Long codigoInterno;
     
     @NotNull
     private Boolean disponivel;
@@ -17,12 +17,12 @@ public class Exemplar {
     @NotNull
     private Midia midia;
 
-    public Long getCodigo_interno() {
-        return codigo_interno;
+    public Long getCodigoInterno() {
+        return codigoInterno;
     }
 
-    public void setCodigo_interno(Long codigo_interno) {
-        this.codigo_interno = codigo_interno;
+    public void setCodigoInterno(Long codigoInterno) {
+        this.codigoInterno = codigoInterno;
     }
 
     public Boolean getDisponivel() {

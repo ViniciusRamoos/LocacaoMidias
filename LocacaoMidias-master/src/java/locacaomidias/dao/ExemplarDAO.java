@@ -40,7 +40,7 @@ public class ExemplarDAO extends DAO<Exemplar> {
         stmt.setLong(2, obj.getMidia().getId());
         
         stmt.execute();
-        obj.setCodigo_interno(Utils.getChavePrimariaAposInsercao(stmt, "insert_id"));
+        obj.setCodigoInterno(Utils.getChavePrimariaAposInsercao(stmt, "insert_id"));
         stmt.close();
     }
 
@@ -59,7 +59,7 @@ public class ExemplarDAO extends DAO<Exemplar> {
         
         stmt.setBoolean(1, obj.getDisponivel());
         stmt.setLong(2, obj.getMidia().getId());
-        stmt.setLong(3, obj.getCodigo_interno());
+        stmt.setLong(3, obj.getCodigoInterno());
         
         stmt.executeUpdate();
         stmt.close();
@@ -75,7 +75,7 @@ public class ExemplarDAO extends DAO<Exemplar> {
                     codigo_interno = ?;
                 """);
         
-        stmt.setLong(1, obj.getCodigo_interno());
+        stmt.setLong(1, obj.getCodigoInterno());
         
         stmt.executeUpdate();
         stmt.close();
@@ -147,7 +147,7 @@ public class ExemplarDAO extends DAO<Exemplar> {
             Tipo t = new Tipo();
             ClassificacaoInterna ci = new ClassificacaoInterna();
             
-            e.setCodigo_interno(rs.getLong("idExemplar"));
+            e.setCodigoInterno(rs.getLong("idExemplar"));
             e.setDisponivel(rs.getBoolean("disponivelExemplar"));
             e.setMidia(m);
             
@@ -264,7 +264,7 @@ public class ExemplarDAO extends DAO<Exemplar> {
             Tipo t = new Tipo();
             ClassificacaoInterna ci = new ClassificacaoInterna();
             
-            e.setCodigo_interno(rs.getLong("idExemplar"));
+            e.setCodigoInterno(rs.getLong("idExemplar"));
             e.setDisponivel(rs.getBoolean("disponivelExemplar"));
             e.setMidia(m);
             

@@ -42,7 +42,7 @@ public class ExemplaresServlet extends HttpServlet {
                 exemplar.setDisponivel(true);
                 exemplar.setMidia(midia);
                 
-                Utils.validar(exemplar, "codigo_interno");
+                Utils.validar(exemplar, "codigoInterno");
                 daoExemplar.salvar(exemplar);
                 disp = request.getRequestDispatcher(
                         "/formularios/exemplares/listagem.jsp");

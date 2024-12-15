@@ -22,7 +22,7 @@ public class ExemplarTeste {
         
         m.setId(Utils.getLong("1"));
         
-        exemplar.setCodigo_interno(Utils.getLong("11"));
+        exemplar.setCodigoInterno(Utils.getLong("11"));
         exemplar.setMidia(m);
         exemplar.setDisponivel(false);
         
@@ -34,10 +34,10 @@ public class ExemplarTeste {
             exemplar = dao.obterPorId(Utils.getLong("7"));
             
             for (Exemplar e : lista) {
-                System.out.println(e.getCodigo_interno() + " " + e.getDisponivel() + " " + e.getMidia().getId());
+                System.out.println(e.getCodigoInterno() + " " + e.getDisponivel() + " " + e.getMidia().getId());
             }
             
-            System.out.println(exemplar.getCodigo_interno() + " " + exemplar.getDisponivel() + " " + exemplar.getMidia().getId());
+            System.out.println(exemplar.getCodigoInterno() + " " + exemplar.getDisponivel() + " " + exemplar.getMidia().getId());
             
         } catch (SQLException e) {
             e.printStackTrace();

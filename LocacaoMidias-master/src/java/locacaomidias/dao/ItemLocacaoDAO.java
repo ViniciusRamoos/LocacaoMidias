@@ -31,7 +31,7 @@ public class ItemLocacaoDAO extends DAO<ItemLocacao> {
                 """);
         
         stmt.setLong(1, obj.getLocacao().getId());
-        stmt.setLong(2, obj.getExemplar().getCodigo_interno());
+        stmt.setLong(2, obj.getExemplar().getCodigoInterno());
         stmt.setBigDecimal(3, obj.getValor());
         
         stmt.executeUpdate();
@@ -86,7 +86,7 @@ public class ItemLocacaoDAO extends DAO<ItemLocacao> {
             il.setValor(rs.getBigDecimal("valorItemLocacao"));
             il.setExemplar(e);
             
-            e.setCodigo_interno(rs.getLong("idExemplar"));
+            e.setCodigoInterno(rs.getLong("idExemplar"));
             e.setDisponivel(rs.getBoolean("disponivelExemplar"));
             
             itensLocacao.add(il);

@@ -29,8 +29,8 @@ public class ItemLocacaoTeste {
         
         l.setId(Utils.getLong("2"));
         
-        e1.setCodigo_interno(Utils.getLong("1"));
-        e2.setCodigo_interno(Utils.getLong("10"));
+        e1.setCodigoInterno(Utils.getLong("1"));
+        e2.setCodigoInterno(Utils.getLong("10"));
         
         item1.setLocacao(l);
         item1.setExemplar(e1);
@@ -46,7 +46,7 @@ public class ItemLocacaoTeste {
             List<ItemLocacao> lista = dao.obterPorIdLocacao(Utils.getLong("2"));
             
             for (ItemLocacao item : lista ){
-                System.out.println(item.getExemplar().getCodigo_interno() + " " + item.getValor());
+                System.out.println(item.getExemplar().getCodigoInterno() + " " + item.getValor());
             }
         } catch (SQLException e) {
             e.printStackTrace();
