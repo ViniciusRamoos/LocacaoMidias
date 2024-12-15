@@ -200,7 +200,7 @@ public class MidiaDAO extends DAO<Midia>{
             ce.setDescricao(rs.getString("descricaoClassificacaoEtaria"));
             
             t.setId(rs.getLong("idTipo"));
-            t.setDescricao("descricaoTipo");
+            t.setDescricao(rs.getString("descricaoTipo"));
             
             ci.setId(rs.getLong("idClassificacaoInterna"));
             ci.setDescricao(rs.getString("descricaoClassificacaoInterna"));
@@ -309,7 +309,7 @@ public class MidiaDAO extends DAO<Midia>{
             ce.setDescricao(rs.getString("descricaoClassificacaoEtaria"));
             
             t.setId(rs.getLong("idTipo"));
-            t.setDescricao("descricaoTipo");
+            t.setDescricao(rs.getString("descricaoTipo"));
             
             ci.setId(rs.getLong("idClassificacaoInterna"));
             ci.setDescricao(rs.getString("descricaoClassificacaoInterna"));
