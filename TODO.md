@@ -3,7 +3,8 @@
 - [x] Implementar Entidades
 - [x] Implementar DAOs
 - [x] Testar DAOs
-- [ ] Implementar Servlets
-- [ ] Implementar Páginas JSP
+- [x] Implementar Servlets
+- [x] Implementar Páginas JSP
 - [ ] Desenvolver CSS
-- [ ] Implementar JS na Página de Locação
+- [x] Implementar JS na Página de Locação
+- [ ] Corrigir Interface de Nova Locação

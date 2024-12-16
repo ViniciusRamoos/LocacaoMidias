@@ -19,7 +19,7 @@
     
     <p>
       <a href="${cp}/formularios/locacoes/listagem.jsp" class="alerta">
-        Locações (Implementar)
+        Locações (Talvez tenha coisas para melhorar)
       </a>
     </p>
     
