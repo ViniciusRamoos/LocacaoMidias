@@ -63,7 +63,7 @@ a:hover {
     margin-bottom: 10px;
 }
 
-#divItensVenda {
+#divItensLocacao {
     font-weight: bold;
     width: 700px;
     border: solid 2px #993300;
@@ -76,17 +76,17 @@ a:hover {
     width: 100%;
 }
 
-#selectProduto {
+#selectExemplar {
     width: 250px;
 }
 
-#selectItensVenda {
+#selectItensLocacao {
     font-family: monospace;
     width: 350px;
     height: 200px;
 }
 
-#txtQuantidade {
+#dataFim {
     width: 100px;
 }
 
@@ -94,6 +94,6 @@ a:hover {
     text-align: right;
 }
 
-.btnsItensVenda {
+.btnsItensLocacao {
     text-align: center; padding: 20px;
 }
