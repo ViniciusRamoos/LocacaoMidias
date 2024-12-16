@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 import locacaomidias.entidades.Exemplar;
 import locacaomidias.entidades.ItemLocacao;
+import locacaomidias.entidades.Midia;
 
 /**
  *
@@ -65,12 +66,15 @@ public class ItemLocacaoDAO extends DAO<ItemLocacao> {
                 SELECT 
                     il.valor valorItemLocacao,
                     e.codigo_interno idExemplar,
-                    e.disponivel disponivelExemplar
+                    e.disponivel disponivelExemplar,
+                    m.id idMidia
                 FROM
                     item_locacao il,
-                    exemplar e
+                    exemplar e,
+                    midia m
                 WHERE
                     il.exemplar_codigo_interno = e.codigo_interno AND
+                    e.midia_id = m.id AND 
                     il.locacao_id = ?;
                 """);
         
@@ -82,12 +86,16 @@ public class ItemLocacaoDAO extends DAO<ItemLocacao> {
             
             ItemLocacao il = new ItemLocacao();
             Exemplar e = new Exemplar();
+            Midia m = new Midia();
             
             il.setValor(rs.getBigDecimal("valorItemLocacao"));
             il.setExemplar(e);
             
+            m.setId(rs.getLong("idMidia"));
+            
             e.setCodigoInterno(rs.getLong("idExemplar"));
             e.setDisponivel(rs.getBoolean("disponivelExemplar"));
+            e.setMidia(m);
             
             itensLocacao.add(il);
         }
