@@ -33,12 +33,12 @@
                    value="${requestScope.tipo.descricao}"/>
           </td>
         </tr>
-      </table>
-    </form>
+      </table> 
         <div class="botao-container">
             <a href="${cp}/formularios/tipos/listagem.jsp"> Voltar </a>
             <input type="submit" value="Alterar"/>
         </div>
+    </form>
   </div>
   </body>
 </html>

@@ -42,11 +42,12 @@
           </td>
         </tr>
       </table>
-    </form>
         <div class="botao-container">
             <a href="${cp}/formularios/classificacoesInternas/listagem.jsp"> Voltar </a>
             <input type="submit" value="Excluir"/>
-        </div> 
+        </div>
+    </form>
+         
     </div>
   </body>
 

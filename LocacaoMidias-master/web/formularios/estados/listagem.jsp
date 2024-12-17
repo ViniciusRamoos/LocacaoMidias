@@ -18,13 +18,7 @@
     <div class="container">
     <h1>Estados Cadastrados</h1>
 
-    <p>
-      <a href="${cp}/formularios/estados/novo.jsp">
-        Novo Estado
-      </a>
-    </p>
-
-    <table class="tabelaListagem">
+      <table class="tabelaListagem">
       <thead>
         <tr>
           <th>Id</th>

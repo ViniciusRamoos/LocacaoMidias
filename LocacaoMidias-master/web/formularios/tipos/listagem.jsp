@@ -18,12 +18,6 @@
     <div class="container">
     <h1>Tipos Cadastrados</h1>
 
-    <p>
-      <a href="${cp}/formularios/tipos/novo.jsp">
-        Novo Tipo
-      </a>
-    </p>
-
     <table class="tabelaListagem">
       <thead>
         <tr>

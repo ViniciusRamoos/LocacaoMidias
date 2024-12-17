@@ -19,12 +19,6 @@
     <div class="container">
     <h1>Classificações Internas Cadastradas</h1>
 
-    <p>
-      <a href="${cp}/formularios/classificacoesInternas/novo.jsp">
-        Nova Classificação Interna
-      </a>
-    </p>
-
     <table class="tabelaListagem">
       <thead>
         <tr>

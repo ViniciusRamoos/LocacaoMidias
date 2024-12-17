@@ -28,12 +28,12 @@
           <td>${requestScope.tipo.descricao}</td>
         </tr>
       </table>
-
-    </form>
         <div class="botao-container">
             <a href="${cp}/formularios/tipos/listagem.jsp"> Voltar </a>
             <input type="submit" value="Excluir"/>
         </div>
+    </form>
+        
   </div>
   </body>
 

@@ -18,12 +18,6 @@
     <div class="container">
     <h1>Clientes Cadastrados</h1>
 
-    <p>
-      <a href="${cp}/formularios/clientes/novo.jsp">
-        Novo Cliente
-      </a>
-    </p>
-
     <table class="tabelaListagem">
       <thead>
         <tr>

@@ -32,11 +32,12 @@
           <td>${requestScope.estado.sigla}</td>
         </tr>
       </table>
-    </form>
         <div class="botao-container">  
             <a href="${cp}/formularios/estados/listagem.jsp"> Voltar </a>
             <input type="submit" value="Excluir"/>
         </div>
+    </form>
+        
   </div>
   </body>
 

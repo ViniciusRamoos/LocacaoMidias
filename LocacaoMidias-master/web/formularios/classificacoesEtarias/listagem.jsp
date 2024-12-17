@@ -18,12 +18,6 @@
         <div class="container">
         <h1>Classificações Etárias Cadastradas</h1>
 
-        <p>
-          <a href="${cp}/formularios/classificacoesEtarias/novo.jsp">
-            Nova Classificação Etária
-          </a>
-        </p>
-
         <table class="tabelaListagem">
           <thead>
             <tr>
