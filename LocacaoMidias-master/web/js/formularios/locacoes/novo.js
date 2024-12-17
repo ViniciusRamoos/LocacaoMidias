@@ -72,12 +72,14 @@ $( () => {
                     let item = itensLocacao[j];
                     
                     // encontrou?
-                    if ( selecao[i] === item.idProduto ) {
+                    if ( selecao[i] === item.codigoInterno ) {
                         
                         // remove da posição j
                         itensLocacao.splice( j, 1 );
+                        $( "#selectExemplar" ).find( `option[value="${item.codigoInterno}"]` ).prop('disabled', false);
+
                         break;
-                        
+
                     }
                     
                 }
