@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Alterar Classificação Interna</h1>
 
     <form method="post" action="${cp}/processaClassificacoesInternas">
@@ -46,20 +46,13 @@
                    value="${requestScope.classificacaoInterna.valorAluguel}"/>
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/classificacoesInternas/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Alterar"/>
-          </td>
-        </tr>
       </table>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/classificacoesInternas/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Alterar"/>
+        </div> 
     </form>
-
-  </body>
+    </div>
+    </body>
 
 </html>

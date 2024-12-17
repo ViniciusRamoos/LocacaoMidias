@@ -15,15 +15,14 @@
   </head>
 
   <body>
-
+  <div class="container">
     <h1>Alterar Ator</h1>
 
     <form method="post" action="${cp}/processaAtores">
-
       <input name="acao" type="hidden" value="alterar"/>
       <input name="id" type="hidden" value="${requestScope.ator.id}"/>
 
-      <table>
+      <table class="tabelaForm">
         <tr>
           <td class="alinharDireita">Nome:</td>
           <td>
@@ -56,23 +55,17 @@
             <input name="dataEstreia"
                    type="date"
                    size="8"
-                   placeholder="dd/mm/aaaa"
                    required
                    value="${data}"/>
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/ator/listagem.jsp">Voltar</a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Alterar"/>
-          </td>
-        </tr>
       </table>
 
+      <div class="botao-container">
+        <a href="${cp}/formularios/ator/listagem.jsp">Voltar</a>
+        <input type="submit" value="Alterar"/>
+      </div>
     </form>
-
-  </body>
-
+  </div>
+</body>
 </html>

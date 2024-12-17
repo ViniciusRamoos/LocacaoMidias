@@ -15,7 +15,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Ator</h1>
 
     <form method="post" action="${cp}/processaAtores">
@@ -40,8 +40,6 @@
                 value="${requestScope.ator.dataEstreia}"/>
           </td>
         </tr>
-        <tr>
-          <td>
             <a href="${cp}/formularios/ator/listagem.jsp">
               Voltar
             </a>
@@ -51,9 +49,12 @@
           </td>
         </tr>
       </table>
-
+      <div class="botao-container">
+            <a href="${cp}/formularios/ator/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Excluir"/>
+      </div>
     </form>
-
+    </div>
   </body>
 
 </html>

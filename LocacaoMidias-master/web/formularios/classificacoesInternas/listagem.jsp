@@ -16,7 +16,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Classificações Internas Cadastradas</h1>
 
     <p>
@@ -71,15 +71,16 @@
       </tbody>
       
     </table>
+    <div class="botao-container">
+        <p>
+          <a href="${cp}/formularios/classificacoesInternas/novo.jsp">
+            Nova Classificação Interna
+          </a>
+        </p>
 
-    <p>
-      <a href="${cp}/formularios/classificacoesInternas/novo.jsp">
-        Nova Classificação Interna
-      </a>
-    </p>
-
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
-
+        <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+    </div>
+  </div>
   </body>
 
 </html>

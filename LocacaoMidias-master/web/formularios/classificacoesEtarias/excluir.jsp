@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Classificação Etária</h1>
 
     <form method="post" action="${cp}/processaClassificacoesEtarias">
@@ -27,20 +27,13 @@
           <td class="alinharDireita">Descrição:</td>
           <td>${requestScope.classificacaoEtaria.descricao}</td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/classificacoesEtarias/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
       </table>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/classificacoesEtarias/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Excluir"/>
+        </div>
     </form>
-
+    </div>
   </body>
 
 </html>

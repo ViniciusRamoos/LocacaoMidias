@@ -15,59 +15,58 @@
   </head>
 
   <body>
+        <div class="container">
+        <h1>Classificações Etárias Cadastradas</h1>
 
-    <h1>Classificações Etárias Cadastradas</h1>
+        <p>
+          <a href="${cp}/formularios/classificacoesEtarias/novo.jsp">
+            Nova Classificação Etária
+          </a>
+        </p>
 
-    <p>
-      <a href="${cp}/formularios/classificacoesEtarias/novo.jsp">
-        Nova Classificação Etária
-      </a>
-    </p>
+        <table class="tabelaListagem">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Alterar</th>
+              <th>Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
 
-    <table class="tabelaListagem">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Nome</th>
-          <th>Alterar</th>
-          <th>Excluir</th>
-        </tr>
-      </thead>
-      <tbody>
+            <jsp:useBean 
+                id="servicos"
+                scope="page"
+                class="locacaomidias.servicos.ClassificacaoEtariaServices"/>
 
-        <jsp:useBean 
-            id="servicos"
-            scope="page"
-            class="locacaomidias.servicos.ClassificacaoEtariaServices"/>
+            <c:forEach items="${servicos.todos}" var="classificacaoEtaria">
+              <tr>
+                <td>${classificacaoEtaria.id}</td>
+                <td>${classificacaoEtaria.descricao}</td>
+                <td>
+                  <a href="${cp}/${prefixo}Alteracao&id=${classificacaoEtaria.id}">
+                    Alterar
+                  </a>
+                </td>
+                <td>
+                  <a href="${cp}/${prefixo}Exclusao&id=${classificacaoEtaria.id}">
+                    Excluir
+                  </a>
+                </td>
+              </tr>
+            </c:forEach>
+          </tbody>
 
-        <c:forEach items="${servicos.todos}" var="classificacaoEtaria">
-          <tr>
-            <td>${classificacaoEtaria.id}</td>
-            <td>${classificacaoEtaria.descricao}</td>
-            <td>
-              <a href="${cp}/${prefixo}Alteracao&id=${classificacaoEtaria.id}">
-                Alterar
-              </a>
-            </td>
-            <td>
-              <a href="${cp}/${prefixo}Exclusao&id=${classificacaoEtaria.id}">
-                Excluir
-              </a>
-            </td>
-          </tr>
-        </c:forEach>
-      </tbody>
-      
-    </table>
-
-    <p>
-      <a href="${cp}/formularios/classificacoesEtarias/novo.jsp">
-        Nova Classificação Etária
-      </a>
-    </p>
-
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
-
-  </body>
-
+        </table>
+            <div class="botao-container">
+                <p>
+                  <a href="${cp}/formularios/classificacoesEtarias/novo.jsp">
+                    Nova Classificação Etária
+                  </a>
+                </p>
+                <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+            </div>
+        </div>
+    </body>
 </html>

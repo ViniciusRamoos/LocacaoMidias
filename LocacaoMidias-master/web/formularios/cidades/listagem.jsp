@@ -15,14 +15,8 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Cidades Cadastradas</h1>
-
-    <p>
-      <a href="${cp}/formularios/cidades/novo.jsp">
-        Nova Cidade
-      </a>
-    </p>
 
     <table class="tabelaListagem">
       <thead>
@@ -60,15 +54,15 @@
         </c:forEach>
       </tbody>
     </table>
-
-    <p>
-      <a href="${cp}/formularios/cidades/novo.jsp">
-        Nova Cidade
-      </a>
-    </p>
-
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
-
+    <div class="botao-container">
+        <p>
+          <a href="${cp}/formularios/cidades/novo.jsp">
+            Nova Cidade
+          </a>
+        </p>
+        <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+    </div>
+    </div>
   </body>
 
 </html>

@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Alterar Cidade</h1>
 
     <form method="post"  action="${cp}/processaCidades">
@@ -61,19 +61,14 @@
             </select>
 
           </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/cidades/listagem.jsp">Voltar</a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Alterar"/>
-          </td>
-        </tr>
+        </tr>     
       </table>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/cidades/listagem.jsp">Voltar</a>
+            <input type="submit" value="Alterar"/>
+        </div>
     </form>
-
+    </div>
   </body>
 
 </html>

@@ -6,6 +6,7 @@
 <html>
   <head>
     <title>Excluir Cidade</title>
+    <a href="../midias/listagem.jsp"></a>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Cidade</h1>
 
     <form method="post" action="${cp}/processaCidades">
@@ -31,18 +32,13 @@
           <td class="alinharDireita">Estado:</td>
           <td>${requestScope.cidade.estado.nome} - ${requestScope.cidade.estado.sigla}</td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/cidades/listagem.jsp">Voltar</a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
-      </table>
-
+       </table>
+        <div class="botao-container">
+          <a href="${cp}/formularios/cidades/listagem.jsp">Voltar</a>
+          <input type="submit" value="Excluir"/>
+        </div>
     </form>
-
+    </div>
   </body>
 
 </html>

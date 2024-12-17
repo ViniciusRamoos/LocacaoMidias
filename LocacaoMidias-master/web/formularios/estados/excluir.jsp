@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Estado</h1>
 
     <form method="post" action="${cp}/processaEstados">
@@ -31,20 +31,13 @@
           <td class="alinharDireita">Sigla:</td>
           <td>${requestScope.estado.sigla}</td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/estados/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
       </table>
-
     </form>
-
+        <div class="botao-container">  
+            <a href="${cp}/formularios/estados/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Excluir"/>
+        </div>
+  </div>
   </body>
 
 </html>

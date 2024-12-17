@@ -15,7 +15,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Cliente</h1>
 
     <form method="post" action="${cp}/processaClientes">
@@ -68,20 +68,13 @@
           <td class="alinharDireita">Cidade:</td>
           <td>${requestScope.cliente.cidade.nome}</td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/clientes/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
       </table>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/clientes/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Excluir"/>
+        </div>
     </form>
-
+    </div>
   </body>
 
 </html>

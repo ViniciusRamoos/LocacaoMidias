@@ -7,14 +7,12 @@
   <head>
     <title>Novo Ator</title>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-          href="${cp}/css/estilos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="${cp}/css/estilos.css"/>
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Novo Ator</h1>
 
     <form method="post" action="${cp}/processaAtores">
@@ -52,20 +50,15 @@
                    required/>
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/ator/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Salvar"/>
-          </td>
-        </tr>
       </table>
 
-    </form>
+      <div class="botao-container">
+        <a href="${cp}/formularios/ator/listagem.jsp">Voltar</a>
+        <input type="submit" value="Salvar"/>
+      </div>
 
+    </form>
+    </div>
   </body>
 
 </html>

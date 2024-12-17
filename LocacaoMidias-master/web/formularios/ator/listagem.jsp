@@ -15,59 +15,41 @@
   </head>
 
   <body>
+    <div class="container">
+        <h1>Atores Cadastrados</h1>
 
-      <h1>Atores Cadastrados</h1>
-      
-      <p>
-      <a href="${cp}/formularios/ator/novo.jsp">
-        Novo Ator
-      </a>
-    </p>
-    
-    <table class="tabelaListagem">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Nome</th>
-          <th>Data Estreia</th>
-          <th>Alterar</th>
-          <th>Excluir</th>
-        </tr>
-      </thead>
-      <tbody>
-          
-          <jsp:useBean 
-            id="servicos"
-            scope="page"
-            class="locacaomidias.servicos.AtorServices"/>
-          
-          <c:forEach items="${servicos.todos}" var="ator">
-          <tr>
-            <td>${ator.id}</td>
-            <td>${ator.nome}</td>
-            <td>${ator.dataEstreia}</td>
-            <td>
-              <a href="${cp}/${prefixo}Alteracao&id=${ator.id}">
-                Alterar
-              </a>
-            </td>
-            <td>
-              <a href="${cp}/${prefixo}Exclusao&id=${ator.id}">
-                Excluir
-              </a>
-            </td>
-          </tr>
-        </c:forEach>
-      </tbody>
-    </table>
-      <p>
-      <a href="${cp}/formularios/ator/novo.jsp">
-        Novo Ator
-      </a>
-    </p>
-    
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+        <table class="tabelaListagem">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Data Estreia</th>
+                    <th>Alterar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <jsp:useBean id="servicos" scope="page" class="locacaomidias.servicos.AtorServices" />
+                <c:forEach items="${servicos.todos}" var="ator">
+                    <tr>
+                        <td>${ator.id}</td>
+                        <td>${ator.nome}</td>
+                        <td>${ator.dataEstreia}</td>
+                        <td>
+                            <a href="${cp}/${prefixo}Alteracao&id=${ator.id}">Alterar</a>
+                        </td>
+                        <td>
+                            <a href="${cp}/${prefixo}Exclusao&id=${ator.id}">Excluir</a>
+                        </td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
 
-  </body>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/ator/novo.jsp">Novo Ator</a>
+            <a href="${cp}/index.jsp">Tela Principal</a>
+        </div>
+    </div>
+</body>
 </html>

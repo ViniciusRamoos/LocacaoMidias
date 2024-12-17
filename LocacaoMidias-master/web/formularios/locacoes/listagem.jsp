@@ -22,14 +22,8 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Locações Cadastradas</h1>
-
-    <p>
-      <a href="${cp}/formularios/locacoes/novo.jsp">
-        Nova Locação
-      </a>
-    </p>
 
     <table class="tabelaListagem">
       <thead>
@@ -79,15 +73,16 @@
       </tbody>
       
     </table>
+        <div class="botao-container">
+            <p>
+              <a href="${cp}/formularios/locacoes/novo.jsp">
+                Nova Locação
+              </a>
+            </p>
 
-    <p>
-      <a href="${cp}/formularios/locacoes/novo.jsp">
-        Nova Locação
-      </a>
-    </p>
-
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
-
+            <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+        </div>
+    </div>
   </body>
 
 </html>

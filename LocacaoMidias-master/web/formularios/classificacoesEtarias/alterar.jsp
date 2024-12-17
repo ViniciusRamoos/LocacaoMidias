@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Alterar Classificação Etária</h1>
 
     <form method="post" action="${cp}/processaClassificacoesEtarias">
@@ -33,20 +33,13 @@
                    value="${requestScope.classificacaoEtaria.descricao}"/>
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/classificacoesEtarias/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Alterar"/>
-          </td>
-        </tr>
       </table>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/classificacoesEtarias/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Alterar"/>
+        </div>  
     </form>
-
+    </div>           
   </body>
 
 </html>

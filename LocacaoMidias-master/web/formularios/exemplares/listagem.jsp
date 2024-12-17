@@ -15,7 +15,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Exemplares Cadastrados</h1>
 
     <p>
@@ -68,15 +68,16 @@
       </tbody>
 
     </table>
+    <div class="botao-container">
+        <p>
+          <a href="${cp}/formularios/exemplares/novo.jsp">
+            Novo Exemplar
+          </a>
+        </p>
 
-    <p>
-      <a href="${cp}/formularios/exemplares/novo.jsp">
-        Novo Exemplar
-      </a>
-    </p>
-
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
-
+        <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+    </div>
+    </div>
   </body>
 
 </html>

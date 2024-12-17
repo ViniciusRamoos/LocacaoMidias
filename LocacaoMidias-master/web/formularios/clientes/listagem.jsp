@@ -15,7 +15,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Clientes Cadastrados</h1>
 
     <p>
@@ -67,15 +67,15 @@
       </tbody>
 
     </table>
+    <div class="botao-container">
+        <p>
+          <a href="${cp}/formularios/clientes/novo.jsp">
+            Novo Cliente
+          </a>
+        </p>
 
-    <p>
-      <a href="${cp}/formularios/clientes/novo.jsp">
-        Novo Cliente
-      </a>
-    </p>
-
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
-
+        <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+    </div>
+    </div>
   </body>
-
 </html>

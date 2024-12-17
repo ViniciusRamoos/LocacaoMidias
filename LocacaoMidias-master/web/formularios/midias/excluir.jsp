@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Midia</h1>
 
     <form method="post" action="${cp}/processaMidias">
@@ -63,20 +63,13 @@
           <td class="alinharDireita">Classificação Etária:</td>
           <td>${requestScope.midia.classificacaoInterna.descricao}</td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/midias/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
       </table>
-
-    </form>
-
+    </form> 
+        <div class="botao-container">
+          <a href="${cp}/formularios/midias/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Excluir"/>
+        </div>
+  </div>
   </body>
 
 </html>

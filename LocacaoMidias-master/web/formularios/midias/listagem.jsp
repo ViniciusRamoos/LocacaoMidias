@@ -15,7 +15,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Midias Cadastradas</h1>
 
     <p>
@@ -77,15 +77,15 @@
       </tbody>
 
     </table>
+        <div class="botao-container">
+            <p>
+              <a href="${cp}/formularios/midias/novo.jsp">
+                Nova Midia
+              </a>
+            </p>
 
-    <p>
-      <a href="${cp}/formularios/midias/novo.jsp">
-        Nova Midia
-      </a>
-    </p>
-
-    <p><a href="${cp}/index.jsp">Tela Principal</a></p>
-
+            <p><a href="${cp}/index.jsp">Tela Principal</a></p>
+        </div>
+    </div>
   </body>
-
 </html>

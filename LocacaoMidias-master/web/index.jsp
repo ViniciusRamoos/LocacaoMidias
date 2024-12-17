@@ -13,75 +13,36 @@
           href="${cp}/css/estilos.css"/>
   </head>
 
-  <body>
-
+<body>
+  <div class="container">
     <h1>Sistema para Locação de Mídias</h1>
-    
-    <p>
-      <a href="${cp}/formularios/locacoes/listagem.jsp" class="alerta">
-        Locações (Talvez tenha coisas para melhorar)
-      </a>
-    </p>
-    
-    <hr/>
-    
-    <p>
-      <a href="${cp}/formularios/midias/listagem.jsp">
-        Mídias
-      </a>
-    </p>
-    <p>
-      <a href="${cp}/formularios/exemplares/listagem.jsp">
-        Exemplares
-      </a>
-    </p>
-    
-    <hr/>
-    
-    <p>
-      <a href="${cp}/formularios/ator/listagem.jsp">
-        Ator
-      </a>
-    </p>
-    <p>
-      <a href="${cp}/formularios/tipos/listagem.jsp">
-        Tipos
-      </a>
-    </p>
-    <p>
-      <a href="${cp}/formularios/generos/listagem.jsp">
-        Gêneros
-      </a>
-    </p>
-    <p>
-      <a href="${cp}/formularios/classificacoesEtarias/listagem.jsp">
-        Classificações Etárias
-      </a>
-    </p>
-    <p>
-      <a href="${cp}/formularios/classificacoesInternas/listagem.jsp">
-        Classificações Internas
-      </a>
-    </p>
-    
-    <hr/>
-    
-    <p>
-      <a href="${cp}/formularios/clientes/listagem.jsp">
-        Clientes
-      </a>
-    </p>
-    <p>
-      <a href="${cp}/formularios/cidades/listagem.jsp">
-        Cidades
-      </a>
-    </p>
-    <p>
-      <a href="${cp}/formularios/estados/listagem.jsp">
-        Estados
-      </a>
-    </p>
 
-  </body>
+    <div class="links-container">
+      <p>
+        <a href="${cp}/formularios/locacoes/listagem.jsp">
+          Locações
+        </a>
+      </p>
 
+      <hr/>
+
+      <p><a href="${cp}/formularios/midias/listagem.jsp">Mídias</a></p>
+      <p><a href="${cp}/formularios/exemplares/listagem.jsp">Exemplares</a></p>
+
+      <hr/>
+
+      <p><a href="${cp}/formularios/ator/listagem.jsp">Ator</a></p>
+      <p><a href="${cp}/formularios/tipos/listagem.jsp">Tipos</a></p>
+      <p><a href="${cp}/formularios/generos/listagem.jsp">Gêneros</a></p>
+      <p><a href="${cp}/formularios/classificacoesEtarias/listagem.jsp">Classificações Etárias</a></p>
+      <p><a href="${cp}/formularios/classificacoesInternas/listagem.jsp">Classificações Internas</a></p>
+
+      <hr/>
+
+      <p><a href="${cp}/formularios/clientes/listagem.jsp">Clientes</a></p>
+      <p><a href="${cp}/formularios/cidades/listagem.jsp">Cidades</a></p>
+      <p><a href="${cp}/formularios/estados/listagem.jsp">Estados</a></p>
+    </div>
+  </div>
+</body>
 </html>

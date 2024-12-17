@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Alterar Tipo</h1>
 
     <form method="post" action="${cp}/processaTipos">
@@ -33,20 +33,12 @@
                    value="${requestScope.tipo.descricao}"/>
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/tipos/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Alterar"/>
-          </td>
-        </tr>
       </table>
-
     </form>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/tipos/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Alterar"/>
+        </div>
+  </div>
   </body>
-
 </html>

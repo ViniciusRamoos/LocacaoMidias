@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Exemplar</h1>
 
     <form method="post" action="${cp}/processaExemplares">
@@ -38,20 +38,13 @@
           <td class="alinharDireita">Midia:</td>
           <td>${requestScope.exemplar.midia.titulo}</td>
         </tr>        
-        <tr>
-          <td>
-            <a href="${cp}/formularios/exemplares/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
       </table>
-
     </form>
-
+    <div class="botao-container">
+            <a href="${cp}/formularios/exemplares/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Excluir"/> 
+    </div>
+    </div>
   </body>
 
 </html>

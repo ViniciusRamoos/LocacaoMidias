@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Novo Cliente</h1>
 
     <form method="post" action="${cp}/processaClientes">
@@ -133,20 +133,13 @@
 
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/clientes/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Salvar"/>
-          </td>
-        </tr>
       </table>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/clientes/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Salvar"/>
+        </div>    
     </form>
-
+    </div>
   </body>
 
 </html>

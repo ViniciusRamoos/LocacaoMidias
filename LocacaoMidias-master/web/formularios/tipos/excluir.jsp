@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Excluir Tipo</h1>
 
     <form method="post" action="${cp}/processaTipos">
@@ -27,20 +27,14 @@
           <td class="alinharDireita">Descrição:</td>
           <td>${requestScope.tipo.descricao}</td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/tipos/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
       </table>
 
     </form>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/tipos/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Excluir"/>
+        </div>
+  </div>
   </body>
 
 </html>

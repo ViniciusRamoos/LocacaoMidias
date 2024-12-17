@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Novo Tipo</h1>
 
     <form method="post" action="${cp}/processaTipos">
@@ -32,20 +32,13 @@
                    required/>
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/tipos/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Salvar"/>
-          </td>
-        </tr>
       </table>
-
     </form>
-
+        <div class="botao-container">
+            <a href="${cp}/formularios/tipos/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Salvar"/>
+        </div>
+  </div>
   </body>
 
 </html>

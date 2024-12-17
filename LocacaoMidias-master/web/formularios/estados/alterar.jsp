@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Alterar Estado</h1>
 
     <form method="post" action="${cp}/processaEstados">
@@ -43,20 +43,13 @@
                    value="${requestScope.estado.sigla}"/>
           </td>
         </tr>
-        <tr>
-          <td>
-            <a href="${cp}/formularios/estados/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Alterar"/>
-          </td>
-        </tr>
       </table>
-
     </form>
-
+        <div class="botao-container">  
+            <a href="${cp}/formularios/estados/listagem.jsp"> Voltar </a>
+            <input type="submit" value="Alterar"/>
+        </div>
+    </div>
   </body>
 
 </html>

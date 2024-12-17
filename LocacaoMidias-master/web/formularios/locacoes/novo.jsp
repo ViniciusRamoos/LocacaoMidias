@@ -23,11 +23,10 @@
   </head>
 
   <body>
-
+    <div class="container">
     <h1>Nova Locação</h1>
 
     <form id="formNovaLocacao" method="post" action="${cp}/processaLocacoes">
-
       <input name="acao" type="hidden" value="inserir"/>
       <input id="hiddenItensLocacao" name="itensLocacao" type="hidden"/>
 
@@ -47,7 +46,7 @@
           </c:forEach>
         </select>
       </div>
-      
+
       <div id="divItensLocacao">
         <table>
           <tr>
@@ -79,7 +78,7 @@
                   </c:forEach>
                 </select>
               </p>
-              
+
               <p>
               Data de Retorno:
               <br/>
@@ -110,19 +109,20 @@
             <td>
             </td>
             <td></td>
-            <td class="alinharDireita">
-              <input id="btnSalvar" type="submit" value="Salvar"/>
-            </td>
           </tr>
         </table>
       </div>
-            
-      <a href="${cp}/formularios/locacoes/listagem.jsp">
-        Voltar
-      </a>
-
+      <div class="botao-container"> 
+        <td class="alinharDireita">
+              <input id="btnSalvar" type="submit" value="Salvar"/>
+        </td>
+        <a href="${cp}/formularios/locacoes/listagem.jsp">
+          Voltar
+        </a>
+      </div>
     </form>
-
-  </body>
+    </div>
+    </div>  
+    </body>
 
 </html>
