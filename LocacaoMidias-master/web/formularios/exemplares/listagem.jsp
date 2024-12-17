@@ -18,11 +18,6 @@
     <div class="container">
     <h1>Exemplares Cadastrados</h1>
 
-    <p>
-      <a href="${cp}/formularios/exemplares/novo.jsp">
-        Novo Exemplar
-      </a>
-    </p>
 
     <table class="tabelaListagem">
       <thead>

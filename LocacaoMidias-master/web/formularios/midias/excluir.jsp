@@ -64,11 +64,12 @@
           <td>${requestScope.midia.classificacaoInterna.descricao}</td>
         </tr>
       </table>
-    </form> 
         <div class="botao-container">
           <a href="${cp}/formularios/midias/listagem.jsp"> Voltar </a>
             <input type="submit" value="Excluir"/>
         </div>
+    </form> 
+        
   </div>
   </body>
 
