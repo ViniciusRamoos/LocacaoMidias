@@ -18,11 +18,6 @@
     <div class="container">
     <h1>Midias Cadastradas</h1>
 
-    <p>
-      <a href="${cp}/formularios/midias/novo.jsp">
-        Nova Midia
-      </a>
-    </p>
 
     <table class="tabelaListagem">
       <thead>

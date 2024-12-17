@@ -40,14 +40,6 @@
                 value="${requestScope.ator.dataEstreia}"/>
           </td>
         </tr>
-            <a href="${cp}/formularios/ator/listagem.jsp">
-              Voltar
-            </a>
-          </td>
-          <td class="alinharDireita">
-            <input type="submit" value="Excluir"/>
-          </td>
-        </tr>
       </table>
       <div class="botao-container">
             <a href="${cp}/formularios/ator/listagem.jsp"> Voltar </a>

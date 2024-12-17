@@ -44,10 +44,11 @@
         </tr>
       </table>
 
-    </form>
-    <div class="botao-container">
+            <div class="botao-container">
             <a href="${cp}/formularios/exemplares/listagem.jsp"> Voltar </a>
             <input type="submit" value="Salvar"/>
+    </form>
+    
     </div>
     </div>
   </body>
