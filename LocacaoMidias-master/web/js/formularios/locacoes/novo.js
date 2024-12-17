@@ -26,20 +26,30 @@ $( () => {
         let valorVenda = $selectExemplar.find( ":selected" ).data( "valor" ).toString();
         let titulo = $selectExemplar.find( ":selected" ).data("titulo");
         let descricao = $selectExemplar.find( ":selected" ).data("descricao");
-        
-        if ( valorVenda.includes( "," ) ) {
-            valorVenda = valorVenda.replace( ",", "." );
+
+        if ( $selectExemplar.find( ":selected" ).is(':disabled') ) {
+            alert('Este exemplar já foi adicionado');
+        } else {
+
+            if ( valorVenda.includes( "," ) ) {
+                valorVenda = valorVenda.replace( ",", "." );
+            }
+            
+            itensLocacao.push({
+                        codigoInterno: codigoInterno,
+                        valorVenda: valorVenda,
+                        descricao: descricao,
+                        titulo: titulo
+                    });
+                    
+            atualizarGUI();
+    
+            $selectExemplar.find( ":selected" ).prop('disabled', true);
+            
         }
         
-        itensLocacao.push({
-                    codigoInterno: codigoInterno,
-                    valorVenda: valorVenda,
-                    descricao: descricao,
-                    titulo: titulo
-                });
-                
-        atualizarGUI();
         
+
     });
     
     $( "#btnRemover" ).on( "click", event => {
