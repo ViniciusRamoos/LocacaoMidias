@@ -69,10 +69,10 @@
                                       data-titulo="${exemplar.midia.titulo}"
                                       data-descricao="${exemplar.midia.tipo.descricao}">
                                   ${exemplar.midia.titulo} (${exemplar.midia.tipo.descricao})
-                              por ${exemplar.midia.classificacaoInterna.valorAluguel}</option>
+                              por R$ ${exemplar.midia.classificacaoInterna.valorAluguel}</option>
                           </c:when>
                           <c:otherwise>
-                              <option disabled>${exemplar.midia.titulo} (${exemplar.midia.tipo.descricao}</option>
+                              <option disabled>${exemplar.midia.titulo} (${exemplar.midia.tipo.descricao})</option>
                           </c:otherwise>
                       </c:choose>
                   </c:forEach>

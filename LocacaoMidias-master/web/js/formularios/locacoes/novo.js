@@ -26,25 +26,35 @@ $( () => {
         let valorVenda = $selectExemplar.find( ":selected" ).data( "valor" ).toString();
         let titulo = $selectExemplar.find( ":selected" ).data("titulo");
         let descricao = $selectExemplar.find( ":selected" ).data("descricao");
-        
-        if ( valorVenda.includes( "," ) ) {
-            valorVenda = valorVenda.replace( ",", "." );
+
+        if ( $selectExemplar.find( ":selected" ).is(':disabled') ) {
+            alert('Este exemplar já foi adicionado');
+        } else {
+
+            if ( valorVenda.includes( "," ) ) {
+                valorVenda = valorVenda.replace( ",", "." );
+            }
+            
+            itensLocacao.push({
+                        codigoInterno: codigoInterno,
+                        valorVenda: valorVenda,
+                        descricao: descricao,
+                        titulo: titulo
+                    });
+                    
+            atualizarGUI();
+    
+            $selectExemplar.find( ":selected" ).prop('disabled', true);
+
         }
         
-        itensLocacao.push({
-                    codigoInterno: codigoInterno,
-                    valorVenda: valorVenda,
-                    descricao: descricao,
-                    titulo: titulo
-                });
-                
-        atualizarGUI();
         
+
     });
     
     $( "#btnRemover" ).on( "click", event => {
         
-        let selecao = $( "#selectExemplar" ).val();
+        let selecao = $( "#selectItensLocacao" ).val();
         
         // se não selecionou nenhum
         if ( selecao.length === 0 ) {
@@ -62,12 +72,14 @@ $( () => {
                     let item = itensLocacao[j];
                     
                     // encontrou?
-                    if ( selecao[i] === item.idProduto ) {
+                    if ( selecao[i] === item.codigoInterno ) {
                         
                         // remove da posição j
                         itensLocacao.splice( j, 1 );
+                        $( "#selectExemplar" ).find( `option[value="${item.codigoInterno}"]` ).prop('disabled', false);
+
                         break;
-                        
+
                     }
                     
                 }
@@ -83,10 +95,22 @@ $( () => {
     
     // ao clicar no botão limpar
     $( "#btnLimpar" ).on( "click", event => {
+
         if ( confirm( "Deseja remover todos os itens da locação?" ) ) {
+            
+            for( let i=0; i<itensLocacao.length; i++ ) {
+
+                idHabilitar = itensLocacao[i].codigoInterno;
+
+                $( "#selectExemplar" ).find( `option[value="${idHabilitar}"]` ).prop('disabled', false);
+
+            }
+
             itensLocacao = [];
             atualizarGUI();
+
         }
+
     });
     
     // submissão da venda
