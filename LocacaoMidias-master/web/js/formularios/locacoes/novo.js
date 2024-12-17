@@ -45,7 +45,7 @@ $( () => {
             atualizarGUI();
     
             $selectExemplar.find( ":selected" ).prop('disabled', true);
-            
+
         }
         
         
@@ -54,7 +54,7 @@ $( () => {
     
     $( "#btnRemover" ).on( "click", event => {
         
-        let selecao = $( "#selectExemplar" ).val();
+        let selecao = $( "#selectItensLocacao" ).val();
         
         // se não selecionou nenhum
         if ( selecao.length === 0 ) {
@@ -93,10 +93,22 @@ $( () => {
     
     // ao clicar no botão limpar
     $( "#btnLimpar" ).on( "click", event => {
+
         if ( confirm( "Deseja remover todos os itens da locação?" ) ) {
+            
+            for( let i=0; i<itensLocacao.length; i++ ) {
+
+                idHabilitar = itensLocacao[i].codigoInterno;
+
+                $( "#selectExemplar" ).find( `option[value="${idHabilitar}"]` ).prop('disabled', false);
+
+            }
+
             itensLocacao = [];
             atualizarGUI();
+
         }
+
     });
     
     // submissão da venda
