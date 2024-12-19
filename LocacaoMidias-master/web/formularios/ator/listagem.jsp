@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="cp" value="${pageContext.request.contextPath}"/>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:set var="prefixo" value="processaAtores?acao=preparar"/>
 <!DOCTYPE html>
 
@@ -33,8 +34,8 @@
                 <c:forEach items="${servicos.todos}" var="ator">
                     <tr>
                         <td>${ator.id}</td>
-                        <td>${ator.nome}</td>
-                        <td>${ator.dataEstreia}</td>
+                        <td>${ator.nome} ${ator.sobrenome}</td>
+                        <td><fmt:formatDate pattern="dd/MM/yyyy" value="${ator.dataEstreia}" var="data" scope="page"/>${data}</td>
                         <td>
                             <a href="${cp}/${prefixo}Alteracao&id=${ator.id}">Alterar</a>
                         </td>
