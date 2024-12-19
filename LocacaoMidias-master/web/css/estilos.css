@@ -40,9 +40,9 @@ a:hover {
 #divCliente {
     font-weight: bold;
     width: 700px;
-    border: solid 2px #003366;
+    border: solid 2px #dc143c;
     border-radius: 10px;
-    background-color: #0099cc;
+    background-color: #fcfcda;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -50,9 +50,9 @@ a:hover {
 #divItensLocacao {
     font-weight: bold;
     width: 700px;
-    border: solid 2px #993300;
+    border: solid 2px #dc143c;
     border-radius: 10px;
-    background-color: #ff9933;
+    background-color: #fcfcda;
     padding: 10px;
 }
 
